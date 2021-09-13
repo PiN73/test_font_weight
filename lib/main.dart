@@ -20,9 +20,21 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text('Hi'),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            for (final weight in FontWeight.values)
+              Text(
+                'Qwertyuiop',
+                style: TextStyle(
+                  fontSize: 48,
+                  fontWeight: weight,
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }
