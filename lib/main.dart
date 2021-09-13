@@ -31,6 +31,7 @@ class MyHomePage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 48,
                   fontWeight: weight,
+                  fontFamily: 'Inter',
                 ),
               ),
           ],
